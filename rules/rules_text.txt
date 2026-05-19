@@ -41,7 +41,15 @@
 
 | 字段 | 说明 |
 |------|------|
-| `is_aigc` | 是否为 AIGC 生成 |
+| `aigc_video_id` | AIGC 视频 ID |
+
+**AIGC 判断逻辑**：
+- `aigc_video_id` 有值（如 `7639939328541592854`）→ AIGC 内容
+- `aigc_video_id` 为 `NULL` → 非AIGC（真人）内容
+
+**问题类型区分**：
+- AIGC 内容 → AIGC纯营销叫卖
+- 非AIGC 内容 → 非AIGC纯营销叫卖
 
 ---
 
